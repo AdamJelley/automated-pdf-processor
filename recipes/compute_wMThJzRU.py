@@ -7,7 +7,7 @@ import sys
 from pdf2image import convert_from_path
 
 # Read recipe inputs
-pdf_Input = dataiku.Folder("odbId")
+pdf_Input = dataiku.Folder("NlFjvamp")
 pdf_Input_info = pdf_Input.get_info()
 input_path = pdf_Input.get_path()
 
