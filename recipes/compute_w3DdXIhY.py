@@ -24,7 +24,7 @@ pdfs_processed_path = pdfs_processed.get_path()
 # TODO: Write here your actual code that computes the outputs
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
 
-PDF_pages = os.listdir(images_path)
+PDF_pages = os.listdir(images_path).sort()
 PDF_pages_path = [os.path.join(images_path, page) for page in PDF_pages]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
