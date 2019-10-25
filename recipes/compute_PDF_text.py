@@ -13,7 +13,7 @@ pdfs_Processed_path = pdfs_Processed.get_path()
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
 
 PDF_pages = sorted(os.listdir(pdfs_Processed_path))
-PDF_pages_path = [os.path.join(images_path, page) for page in PDF_pages]
+PDF_pages_path = [os.path.join(pdfs_Processed_path, page) for page in PDF_pages]
 
 pdf_text_df = ... # Compute a Pandas dataframe to write into PDF_text
 
