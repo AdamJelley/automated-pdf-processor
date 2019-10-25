@@ -1,11 +1,8 @@
 {
   "name": "PDF_Input",
-  "type": "S3",
+  "type": "Filesystem",
   "params": {
-    "bucket": "dscluster-paris-1",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "${odbId}",
-    "connection": "s3_direct",
+    "connection": "filesystem_managed",
     "path": "/dataiku/${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -91,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572008185360
+    "lastModifiedOn": 1572009755359
   },
   "creationTag": {
     "versionNumber": 0,
