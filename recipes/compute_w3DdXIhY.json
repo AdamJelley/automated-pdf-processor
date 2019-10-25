@@ -4,7 +4,8 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "Adam_OCR_env"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -37,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572011503235
+    "lastModifiedOn": 1572011526877
   },
   "creationTag": {
     "versionNumber": 0,
