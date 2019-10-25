@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "id": "VFcyMmi",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "ajelley",
+  "listed": true,
+  "name": "Dataiku OCR Demo\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1572008102352
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1572008102352
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
