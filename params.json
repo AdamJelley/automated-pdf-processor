@@ -107,7 +107,6 @@
   },
   "name": "Dataiku OCR Demo",
   "projectStatus": "Sandbox",
-  "imgColor": "#28aadd",
   "imgPattern": 1,
   "showInitials": false,
   "metrics": {
@@ -165,11 +164,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572012996229
+    "lastModifiedOn": 1572013112743
   },
   "creationTag": {
     "versionNumber": 0,
