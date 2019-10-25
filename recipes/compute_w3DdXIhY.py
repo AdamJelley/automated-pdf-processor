@@ -29,7 +29,7 @@ PDF_pages_path = [os.path.join(images_path, page) for page in PDF_pages]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for i, page_path in enumerate(PDF_pages_path):
-    output_path = os.path.join(pdfs_processed_path, 'page'+"{0:0=2d}".format(i+1)+'.txt')
+    output_path = os.path.join(pdfs_processed_path, 'page_'+"{0:0=2d}".format(i+1)+'.txt')
     pdf_text = pytesseract.image_to_string(Image.open(page_path)).encode('ascii', 'ignore')
     with open(output_path, "w") as f:
         f.write(pdf_text)
