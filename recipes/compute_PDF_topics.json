@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "method": "KL",
+      "method": "textrank",
       "n_sentences": 1,
       "text_column_name": "text"
     },
@@ -38,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572286914991
+    "lastModifiedOn": 1572287302170
   },
   "creationTag": {
     "versionNumber": 0,
