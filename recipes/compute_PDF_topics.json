@@ -5,7 +5,7 @@
   "params": {
     "customConfig": {
       "method": "textrank",
-      "n_sentences": 3,
+      "n_sentences": 1,
       "text_column_name": "text"
     },
     "containerSelection": {
@@ -38,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572286531526
+    "lastModifiedOn": 1572286575308
   },
   "creationTag": {
     "versionNumber": 0,
