@@ -34,7 +34,7 @@ allPagestxt_simple = re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r"\1 ", all
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 sentencesList = nltk.sent_tokenize(allPagestxt_simple)
-df = pd.DataFrame(sentencesList, columns=['sentences'])
+df = pd.DataFrame(sentencesList, columns=['text'])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 pdf_text_df = df # Compute a Pandas dataframe to write into PDF_text
