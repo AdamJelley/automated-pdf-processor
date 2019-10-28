@@ -6,7 +6,7 @@
     "customConfig": {
       "method": "textrank",
       "n_sentences": 3,
-      "text_column_name": "sentences"
+      "text_column_name": "text"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -38,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572286516460
+    "lastModifiedOn": 1572286531526
   },
   "creationTag": {
     "versionNumber": 0,
