@@ -1,7 +1,12 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import os
+import re
+import nltk
+#nltk.download('punkt')
 
 # Read recipe inputs
 pdfs_Processed = dataiku.Folder("w3DdXIhY")
@@ -15,7 +20,24 @@ pdfs_Processed_path = pdfs_Processed.get_path()
 PDF_pages = sorted(os.listdir(pdfs_Processed_path))
 PDF_pages_path = [os.path.join(pdfs_Processed_path, page) for page in PDF_pages]
 
-pdf_text_df = ... # Compute a Pandas dataframe to write into PDF_text
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+allPagestxt = ''
+for pagetxt in PDF_pages_path:
+    allPagestxt += open(pagetxt, 'r').read()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+allPagestxt_simple = allPagestxt.replace('\n','').replace(',','')
+allPagestxt_simple = re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r"\1 ", allPagestxt_simple)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+#allPagestxt_simple
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+sentencesList = nltk.sent_tokenize(allPagestxt_simple)
+df = pd.DataFrame(sentencesList, columns=['sentences'])
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+pdf_text_df = df # Compute a Pandas dataframe to write into PDF_text
 
 
 # Write recipe outputs
