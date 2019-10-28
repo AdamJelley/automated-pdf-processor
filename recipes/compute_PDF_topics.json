@@ -3,7 +3,11 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "method": "textrank",
+      "n_sentences": 3,
+      "text_column_name": "sentences"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -34,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572284901095
+    "lastModifiedOn": 1572284924675
   },
   "creationTag": {
     "versionNumber": 0,
