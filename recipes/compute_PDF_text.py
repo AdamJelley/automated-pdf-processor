@@ -26,7 +26,7 @@ for pagetxt in PDF_pages_path:
     allPagestxt += '\n' + open(pagetxt, 'r').read()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-allPagestxt_simple = allPagestxt.replace('\n', '')
+allPagestxt_simple = allPagestxt
 allPagestxt_simple = re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r"\1 ", allPagestxt_simple)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
