@@ -30,10 +30,10 @@ allPagestxt_simple = allPagestxt.replace('\n','').replace(',','')
 allPagestxt_simple = re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r"\1 ", allPagestxt_simple)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-#allPagestxt_simple
+sentencesList = [allPagestxt_simple]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-sentencesList = nltk.sent_tokenize(allPagestxt_simple)
+#sentencesList = nltk.sent_tokenize(allPagestxt_simple)
 df = pd.DataFrame(sentencesList, columns=['text'])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
