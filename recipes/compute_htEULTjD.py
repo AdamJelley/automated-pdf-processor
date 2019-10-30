@@ -16,8 +16,8 @@ outputText = pdf_topics_df['text_summary'][0]
 # Write recipe outputs
 pdf_topics_text = dataiku.Folder("htEULTjD")
 pdf_topics_text_info = pdf_topics_text.get_info()
-pdf_topics_text.get_path()
+pdf_topics_path = pdf_topics_text.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-with open(os.path.join('/path/to/Documents',completeName)"PDF_summary.txt", "w") as text_file:
+with open(os.path.join(pdf_topics_path,"PDF_summary.txt"), 'w') as text_file:
     text_file.write(outputText)
