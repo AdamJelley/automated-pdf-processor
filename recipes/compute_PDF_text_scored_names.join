@@ -137,11 +137,6 @@
       "table": 0
     },
     {
-      "name": "target",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "target_name",
       "type": "string",
       "table": 1
@@ -292,10 +287,6 @@
           },
           {
             "name": "prediction",
-            "type": "string"
-          },
-          {
-            "name": "target",
             "type": "string"
           },
           {
