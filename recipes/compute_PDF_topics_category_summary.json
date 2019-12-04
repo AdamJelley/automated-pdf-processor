@@ -11,6 +11,9 @@
           "map": {
             "PDF_topics_category": {
               "repartition": 10
+            },
+            "PDF_text_scored_names": {
+              "repartition": 10
             }
           }
         },
@@ -69,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575467294178
+    "lastModifiedOn": 1575467296314
   },
   "creationTag": {
     "versionNumber": 0,
