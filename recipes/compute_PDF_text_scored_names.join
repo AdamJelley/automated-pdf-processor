@@ -1,0 +1,165 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "text",
+      "table": 0
+    },
+    {
+      "name": "proba_0",
+      "table": 0
+    },
+    {
+      "name": "proba_9",
+      "table": 0
+    },
+    {
+      "name": "proba_13",
+      "table": 0
+    },
+    {
+      "name": "proba_8",
+      "table": 0
+    },
+    {
+      "name": "proba_5",
+      "table": 0
+    },
+    {
+      "name": "proba_10",
+      "table": 0
+    },
+    {
+      "name": "proba_12",
+      "table": 0
+    },
+    {
+      "name": "proba_15",
+      "table": 0
+    },
+    {
+      "name": "proba_3",
+      "table": 0
+    },
+    {
+      "name": "proba_7",
+      "table": 0
+    },
+    {
+      "name": "proba_11",
+      "table": 0
+    },
+    {
+      "name": "proba_14",
+      "table": 0
+    },
+    {
+      "name": "proba_2",
+      "table": 0
+    },
+    {
+      "name": "proba_4",
+      "table": 0
+    },
+    {
+      "name": "proba_6",
+      "table": 0
+    },
+    {
+      "name": "proba_17",
+      "table": 0
+    },
+    {
+      "name": "proba_16",
+      "table": 0
+    },
+    {
+      "name": "proba_18",
+      "table": 0
+    },
+    {
+      "name": "proba_19",
+      "table": 0
+    },
+    {
+      "name": "proba_1",
+      "table": 0
+    },
+    {
+      "name": "prediction",
+      "table": 0
+    },
+    {
+      "name": "target",
+      "table": 1
+    },
+    {
+      "name": "target_name",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
