@@ -11,20 +11,14 @@ twenty_train = fetch_20newsgroups(data_home='home/dataiku/ajelley', subset='trai
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 articles_df = pd.DataFrame(twenty_train.data, columns=['text'])
 targets_df = pd.DataFrame(twenty_train.target, columns=['target'])
+target_names_df = pd.DataFrame(twenty_train.target_names, columns=['target_name']).reset_index().rename(columns={'index':'target'})
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 assert len(articles_df) == len(targets_df), "Number of articles does not equal number of labels"
 twenty_newsgroups_df = articles_df.join(targets_df, how='left')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-target_names_df = pd.DataFrame(twenty_train.target_names, columns=['target_name']).reset_index().rename(columns={'index':'target'}).astype('str')
+twenty_newsgroups_df = twenty_newsgroups_df.merge(target_names_df, on=['target'], how='inner')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 twenty_newsgroups = dataiku.Dataset("twenty_newsgroups")
 twenty_newsgroups.write_with_schema(twenty_newsgroups_df)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Write recipe outputs
-target_names = dataiku.Dataset("target_names")
-target_names.write_with_schema(target_names_df)
