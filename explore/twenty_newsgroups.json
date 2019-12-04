@@ -52,9 +52,11 @@
           "type": "facet",
           "column": "target",
           "columnType": "NUMERICAL",
-          "currentMode": "NUMERICAL",
+          "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "8": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
