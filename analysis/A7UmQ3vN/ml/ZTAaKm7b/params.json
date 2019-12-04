@@ -190,7 +190,7 @@
         "stopWordsMode": "NONE",
         "useCustomVectorizer": false,
         "name": "text",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": false,
