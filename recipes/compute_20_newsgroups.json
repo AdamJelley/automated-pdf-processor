@@ -21,18 +21,22 @@
     "main": {
       "items": [
         {
-          "ref": "20_newsgroups",
+          "ref": "twenty_newsgroups",
+          "appendMode": false
+        },
+        {
+          "ref": "target_names",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575460309401
+    "lastModifiedOn": 1575460347840
   },
   "creationTag": {
     "versionNumber": 0,
