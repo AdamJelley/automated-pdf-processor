@@ -24,7 +24,11 @@ os.listdir(pdfs_folder_path)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for output_pdf_folder in os.listdir(pdfs_folder_path):
-    os.rmdir(os.path.join(pdfs_folder_path, output_pdf_folder))
+    output_pdf_folder_path = os.path.join(pdfs_folder_path, output_pdf_folder)
+    for page in os.listdir(output_pdf_folder_path):
+        page_path = os.path.join(output_pdf_folder_path, page)
+        os.remove(page_path)
+    os.rmdir(output_pdf_folder_path)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for pdf_folder in os.listdir(images_folder_path):
