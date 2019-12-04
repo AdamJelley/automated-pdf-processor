@@ -1,5 +1,5 @@
 {
-  "type": "HDFS",
+  "type": "PostgreSQL",
   "managed": true,
   "formatType": "parquet",
   "checklists": {
@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575460496737
+    "lastModifiedOn": 1575465269163
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,18 +51,18 @@
   },
   "tags": [],
   "params": {
-    "metastoreSynchronizationEnabled": true,
-    "hiveDatabase": "dataiku_dsproj1",
-    "hiveTableName": "${projectKey}_twenty_newsgroups",
-    "connection": "hdfs_managed",
-    "path": "/${projectKey}/twenty_newsgroups",
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgresql-10",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_twenty_newsgroups",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
     "columns": [
@@ -75,7 +75,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "metrics": {
     "probes": [
