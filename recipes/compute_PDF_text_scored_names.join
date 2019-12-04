@@ -4,106 +4,146 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "prediction",
+            "table": 0
+          },
+          "column2": {
+            "name": "target",
+            "table": 1
+          },
+          "maxDistance": 1,
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "text",
+      "type": "string",
       "table": 0
     },
     {
       "name": "proba_0",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_9",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_13",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_8",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_5",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_10",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_12",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_15",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_3",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_7",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_11",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_14",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_2",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_4",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_6",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_17",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_16",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_18",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_19",
+      "type": "double",
       "table": 0
     },
     {
       "name": "proba_1",
+      "type": "double",
       "table": 0
     },
     {
       "name": "prediction",
+      "type": "string",
       "table": 0
     },
     {
       "name": "target",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "target_name",
+      "type": "string",
       "table": 1
     }
   ],
@@ -161,5 +201,6 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
   "enableAutoCastInJoinConditions": false
 }
