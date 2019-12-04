@@ -12,26 +12,16 @@ from pdf2image import convert_from_path
 pdfs = dataiku.Folder("QZb3pfTL")
 pdfs_info = pdfs.get_info()
 
-
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
 input_path = pdfs.get_path()
 
-examplePDF_path = os.path.join(input_path, 'Dataiku_Overview.pdf')
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-print("Path = " + examplePDF_path)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Write recipe outputs
-#pdf_processed = dataiku.Dataset("PDF_processed")
-#pdf_processed.write_with_schema(pdf_processed_df)
-
 images = dataiku.Folder("HNEvJqgm")
 images_info = images.get_info()
 images_path = images.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-examplePDF_image = convert_from_path(examplePDF_path,fmt='jpg',output_folder=images_path)
+for pdf in os.listdir(input_path):
+    pdf_path = os.path.join(input_path, pdf)
+    output_path = os.path.join(images_path, pdf)
+    print("Path = " + output_path)
+    pdf_image = convert_from_path(pdf_path,fmt='jpg',output_folder=images_path)
