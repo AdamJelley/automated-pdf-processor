@@ -24,16 +24,20 @@
         {
           "ref": "twenty_newsgroups",
           "appendMode": false
+        },
+        {
+          "ref": "target_names",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575467883187
+    "lastModifiedOn": 1575467089211
   },
   "creationTag": {
     "versionNumber": 0,

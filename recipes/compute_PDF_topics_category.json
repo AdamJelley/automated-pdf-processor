@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "PDF_text_scored",
+          "ref": "PDF_text_scored_names",
           "deps": []
         },
         {
-          "ref": "target_names",
+          "ref": "PDF_topics",
           "deps": []
         }
       ]
@@ -25,25 +25,25 @@
     "main": {
       "items": [
         {
-          "ref": "PDF_text_scored_names",
+          "ref": "PDF_topics_category",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575466572029
+    "lastModifiedOn": 1575466639317
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575465244299
+    "lastModifiedOn": 1575466622215
   },
   "tags": [],
   "customFields": {},

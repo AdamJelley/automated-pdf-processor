@@ -14,9 +14,6 @@
             },
             "PDF_text_scored_names": {
               "repartition": 10
-            },
-            "PDF_text_scored": {
-              "repartition": 10
             }
           }
         },
@@ -58,7 +55,7 @@
     "main": {
       "items": [
         {
-          "ref": "PDF_text_scored",
+          "ref": "PDF_text_scored_names",
           "deps": []
         }
       ]
@@ -75,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575468039287
+    "lastModifiedOn": 1575467304904
   },
   "creationTag": {
     "versionNumber": 0,
