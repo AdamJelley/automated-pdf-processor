@@ -10,7 +10,7 @@ twenty_train = fetch_20newsgroups(subset='train', shuffle=True, random_state=42)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 articles_df = pd.DataFrame(twenty_train.data, columns=['text'])
-targets_df = pd.DataFrame(twenty_train.target, columns=['target'])
+targets_df = pd.DataFrame(twenty_train.target, columns=['target']).astype('str')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 assert len(articles_df) == len(targets_df), "Number of articles does not equal number of labels"
