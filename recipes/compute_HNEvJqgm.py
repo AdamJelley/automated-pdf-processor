@@ -23,5 +23,5 @@ images_path = images.get_path()
 for pdf in os.listdir(input_path):
     pdf_path = os.path.join(input_path, pdf)
     output_path = os.path.join(images_path, pdf)
-    print("Path = " + output_path)
+    os.mkdir(output_path)
     pdf_image = convert_from_path(pdf_path,fmt='jpg',output_folder=output_path)
