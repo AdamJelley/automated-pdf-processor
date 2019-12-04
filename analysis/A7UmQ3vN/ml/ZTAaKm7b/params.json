@@ -1,8 +1,8 @@
 {
-  "predictionType": "REGRESSION",
+  "predictionType": "MULTICLASS",
   "targetVariable": "target",
   "weight": {
-    "weightMethod": "NO_WEIGHTING"
+    "weightMethod": "CLASS_WEIGHT"
   },
   "time": {
     "enabled": false,
@@ -72,7 +72,108 @@
         "code": "# type your code here"
       }
     },
-    "target_remapping": [],
+    "target_remapping": [
+      {
+        "sourceValue": "0",
+        "mappedValue": 0,
+        "sampleFreq": 420
+      },
+      {
+        "sourceValue": "9",
+        "mappedValue": 1,
+        "sampleFreq": 545
+      },
+      {
+        "sourceValue": "13",
+        "mappedValue": 2,
+        "sampleFreq": 533
+      },
+      {
+        "sourceValue": "8",
+        "mappedValue": 3,
+        "sampleFreq": 532
+      },
+      {
+        "sourceValue": "5",
+        "mappedValue": 4,
+        "sampleFreq": 531
+      },
+      {
+        "sourceValue": "10",
+        "mappedValue": 5,
+        "sampleFreq": 529
+      },
+      {
+        "sourceValue": "12",
+        "mappedValue": 6,
+        "sampleFreq": 526
+      },
+      {
+        "sourceValue": "15",
+        "mappedValue": 7,
+        "sampleFreq": 524
+      },
+      {
+        "sourceValue": "3",
+        "mappedValue": 8,
+        "sampleFreq": 523
+      },
+      {
+        "sourceValue": "7",
+        "mappedValue": 9,
+        "sampleFreq": 522
+      },
+      {
+        "sourceValue": "11",
+        "mappedValue": 10,
+        "sampleFreq": 518
+      },
+      {
+        "sourceValue": "14",
+        "mappedValue": 11,
+        "sampleFreq": 517
+      },
+      {
+        "sourceValue": "2",
+        "mappedValue": 12,
+        "sampleFreq": 517
+      },
+      {
+        "sourceValue": "4",
+        "mappedValue": 13,
+        "sampleFreq": 513
+      },
+      {
+        "sourceValue": "6",
+        "mappedValue": 14,
+        "sampleFreq": 512
+      },
+      {
+        "sourceValue": "17",
+        "mappedValue": 15,
+        "sampleFreq": 505
+      },
+      {
+        "sourceValue": "16",
+        "mappedValue": 16,
+        "sampleFreq": 486
+      },
+      {
+        "sourceValue": "18",
+        "mappedValue": 17,
+        "sampleFreq": 406
+      },
+      {
+        "sourceValue": "19",
+        "mappedValue": 18,
+        "sampleFreq": 330
+      },
+      {
+        "sourceValue": "1",
+        "mappedValue": 19,
+        "sampleFreq": 511
+      }
+    ],
     "preprocessingFitSampleRatio": 1.0,
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
@@ -145,17 +246,16 @@
   "modeling": {
     "skipExpensiveReports": false,
     "random_forest_regression": {
-      "enabled": true,
+      "enabled": false,
       "n_estimators": [
         100
       ],
       "n_jobs": 1,
       "max_tree_depth": [
-        6,
-        11
+        8
       ],
       "min_samples_leaf": [
-        10
+        3
       ],
       "selection_mode": "auto",
       "max_features": [
@@ -164,16 +264,17 @@
       "max_feature_prop": 0.3
     },
     "random_forest_classification": {
-      "enabled": false,
+      "enabled": true,
       "n_estimators": [
         100
       ],
       "n_jobs": 4,
       "max_tree_depth": [
-        8
+        6,
+        11
       ],
       "min_samples_leaf": [
-        3
+        1
       ],
       "selection_mode": "auto",
       "max_features": [
@@ -277,7 +378,7 @@
         1.0,
         3.0
       ],
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -318,8 +419,8 @@
       "leaf_size": 30
     },
     "logistic_regression": {
-      "enabled": false,
-      "multi_class": "ovr",
+      "enabled": true,
+      "multi_class": "multinomial",
       "l1": false,
       "l2": true,
       "C": [
@@ -616,30 +717,7 @@
       "checkpoint_interval": 10
     },
     "custom_python": [],
-    "plugin_python": {
-      "CustomPyPredAlgo_catboost_catboost_catboost": {
-        "pluginId": "catboost",
-        "pluginVersion": "0.0.1",
-        "elementId": "catboost_catboost",
-        "name": "Custom algo catboost_catboost",
-        "enabled": false,
-        "params": {
-          "n_estimators": [
-            50.0,
-            100.0
-          ],
-          "learning_rate": [
-            0.2
-          ],
-          "loss": [
-            "linear"
-          ],
-          "random_state": 1337.0
-        },
-        "supportsSampleWeights": false,
-        "acceptsSparseMatrix": false
-      }
-    },
+    "plugin_python": {},
     "keras": {
       "epochs": 10,
       "batchSize": 32,
@@ -671,7 +749,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "ROC_AUC",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
