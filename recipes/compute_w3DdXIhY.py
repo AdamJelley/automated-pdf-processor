@@ -20,6 +20,10 @@ pdfs_processed_info = pdfs_processed.get_info()
 pdfs_folder_path = pdfs_processed.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+for output_pdf_folder in os.listdir(pdfs_folder_path):
+    os.rmdir(output_pdf_folder)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for pdf_folder in os.listdir(images_folder_path):
     print(pdf_folder)
     PDF_pages = sorted(os.listdir(os.path.join(images_folder_path, pdf_folder)))
