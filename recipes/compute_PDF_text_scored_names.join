@@ -32,6 +32,11 @@
       "table": 0
     },
     {
+      "name": "text_summary",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "proba_0",
       "type": "double",
       "table": 0
@@ -203,6 +208,10 @@
         "columns": [
           {
             "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "text_summary",
             "type": "string"
           },
           {
