@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575460342081
+    "lastModifiedOn": 1575460501557
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,8 +65,17 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "target",
+        "type": "bigint"
+      },
+      {
+        "name": "target_name",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
