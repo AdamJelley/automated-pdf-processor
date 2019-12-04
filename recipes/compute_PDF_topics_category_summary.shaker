@@ -34,21 +34,6 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "ColumnReorder",
-      "params": {
-        "referenceColumn": "prediction",
-        "columns": [
-          "text_summary"
-        ],
-        "reorderAction": "BEFORE_COLUMN",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
