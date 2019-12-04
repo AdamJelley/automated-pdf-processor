@@ -30,11 +30,11 @@ for output_pdf_folder in os.listdir(pdfs_folder_path):
 for pdf_folder in os.listdir(images_folder_path):
     PDF_pages = sorted(os.listdir(os.path.join(images_folder_path, pdf_folder)))
     PDF_pages_path = [os.path.join(images_folder_path, pdf_folder) for pdf_folder in PDF_pages]
-
+    print(PDF_pages_path)
     pdfs_processed_path = os.path.join(pdfs_folder_path, pdf_folder)
     os.mkdir(pdfs_processed_path)
 
-    for i, page_path in enumerate(os.listdir(pdfs_processed_path)):
+    for i, page_path in enumerate(PDF_pages_path):
         print(PDF_pages_path)
         output_path = os.path.join(pdfs_processed_path, 'page_'+"{0:0=2d}".format(i+1)+'.txt')
         pdf_text = pytesseract.image_to_string(Image.open(page_path))
