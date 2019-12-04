@@ -17,19 +17,14 @@ assert len(articles_df) == len(targets_df), "Number of articles does not equal n
 twenty_newsgroups_df = articles_df.join(targets_df, how='left')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-twenty_newsgroups_df
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 target_names_df = pd.DataFrame(twenty_train.target_names, columns=['target_name']).reset_index().rename(columns={'index':'target'})
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
-20_newsgroups_df = ... # Compute a Pandas dataframe to write into 20_newsgroups
-
-
 # Write recipe outputs
-20_newsgroups = dataiku.Dataset("20_newsgroups")
-20_newsgroups.write_with_schema(20_newsgroups_df)
+twenty_newsgroups = dataiku.Dataset("twenty_newsgroups")
+twenty_newsgroups.write_with_schema(twenty_newsgroups_df)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# Write recipe outputs
+target_names = dataiku.Dataset("target_names")
+target_names.write_with_schema(target_names_df)
