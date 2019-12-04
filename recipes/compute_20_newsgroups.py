@@ -10,14 +10,14 @@ twenty_train = fetch_20newsgroups(subset='train', shuffle=True, random_state=42)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 articles_df = pd.DataFrame(twenty_train.data, columns=['text'])
-targets_df = pd.DataFrame(twenty_train.target, columns=['target']).astype('str')
+targets_df = pd.DataFrame(twenty_train.target, columns=['target'])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 assert len(articles_df) == len(targets_df), "Number of articles does not equal number of labels"
 twenty_newsgroups_df = articles_df.join(targets_df, how='left')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-target_names_df = pd.DataFrame(twenty_train.target_names, columns=['target_name']).reset_index().rename(columns={'index':'target'})
+target_names_df = pd.DataFrame(twenty_train.target_names, columns=['target_name']).reset_index().rename(columns={'index':'target'}).astype('str')
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
