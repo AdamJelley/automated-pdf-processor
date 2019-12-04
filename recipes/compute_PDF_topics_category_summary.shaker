@@ -44,6 +44,40 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "prediction",
+          "proba_0",
+          "proba_9",
+          "proba_13",
+          "proba_8",
+          "proba_5",
+          "proba_10",
+          "proba_12",
+          "proba_15",
+          "proba_3",
+          "proba_7",
+          "proba_11",
+          "proba_14",
+          "proba_2",
+          "proba_4",
+          "proba_6",
+          "proba_17",
+          "proba_16",
+          "proba_18",
+          "proba_19",
+          "proba_1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
