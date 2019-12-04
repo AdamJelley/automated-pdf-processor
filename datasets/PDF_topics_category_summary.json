@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575466685423
+    "lastModifiedOn": 1575466768223
   },
   "creationTag": {
     "versionNumber": 0,
@@ -143,15 +143,15 @@
         "type": "double"
       },
       {
+        "name": "text_summary",
+        "type": "string"
+      },
+      {
         "name": "prediction",
         "type": "bigint"
       },
       {
         "name": "target_name",
-        "type": "string"
-      },
-      {
-        "name": "text_summary",
         "type": "string"
       }
     ],
