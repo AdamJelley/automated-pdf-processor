@@ -178,7 +178,7 @@
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "text": {
-        "text_handling": "TOKENIZE_HASHING_SVD",
+        "text_handling": "TOKENIZE_TFIDF",
         "minRowsRatio": 0.001,
         "maxRowsRatio": 0.8,
         "maxWords": 0,
@@ -193,7 +193,7 @@
         "role": "INPUT",
         "type": "TEXT",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "FreeText"
         },
