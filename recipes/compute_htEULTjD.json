@@ -22,6 +22,10 @@
         {
           "ref": "PDF_topics",
           "deps": []
+        },
+        {
+          "ref": "PDF_topics_category_summary",
+          "deps": []
         }
       ]
     }
@@ -37,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575583413689
+    "lastModifiedOn": 1575583975653
   },
   "creationTag": {
     "versionNumber": 0,
