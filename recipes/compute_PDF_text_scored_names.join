@@ -192,13 +192,7 @@
       "computedColumns": []
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
-      "index": 1,
-      "computedColumns": []
+      "index": 1
     }
   ],
   "computedColumns": [],
