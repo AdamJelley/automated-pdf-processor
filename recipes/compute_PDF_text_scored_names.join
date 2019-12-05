@@ -27,6 +27,11 @@
   ],
   "selectedColumns": [
     {
+      "name": "document",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "text",
       "type": "string",
       "table": 0
@@ -201,6 +206,10 @@
     "$status": {
       "schema": {
         "columns": [
+          {
+            "name": "document",
+            "type": "string"
+          },
           {
             "name": "text",
             "type": "string"
