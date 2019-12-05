@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575466569147
+    "lastModifiedOn": 1575584360028
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,6 +58,10 @@
   },
   "schema": {
     "columns": [
+      {
+        "name": "document",
+        "type": "string"
+      },
       {
         "name": "text",
         "type": "string"
