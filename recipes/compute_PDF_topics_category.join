@@ -4,22 +4,25 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
         {
           "column1": {
-            "name": "text",
+            "name": "document",
             "table": 0
           },
           "dateDiffUnit": "DAY",
           "column2": {
-            "name": "text",
+            "name": "document",
             "table": 1
           },
           "maxMatches": 1,
           "caseInsensitive": false,
-          "maxDistance": 0,
+          "maxDistance": 1,
           "normalizeText": false,
           "type": "EQ",
           "strict": false
@@ -28,6 +31,11 @@
     }
   ],
   "selectedColumns": [
+    {
+      "name": "document",
+      "type": "string",
+      "table": 0
+    },
     {
       "name": "text",
       "type": "string",
@@ -208,6 +216,10 @@
     "$status": {
       "schema": {
         "columns": [
+          {
+            "name": "document",
+            "type": "string"
+          },
           {
             "name": "text",
             "type": "string"
