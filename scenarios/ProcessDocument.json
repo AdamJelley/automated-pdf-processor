@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575468800687
+    "lastModifiedOn": 1575586537044
   },
   "checklists": {
     "checklists": []
@@ -20,7 +20,21 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "xuzzRLNS",
+      "type": "ds_modified",
+      "delay": 900,
+      "active": true,
+      "params": {
+        "watches": []
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": []
