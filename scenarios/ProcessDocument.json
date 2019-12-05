@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575586677064
+    "lastModifiedOn": 1575587102615
   },
   "checklists": {
     "checklists": []
@@ -37,7 +37,7 @@
         ]
       },
       "graceDelaySettings": {
-        "delay": 120,
+        "delay": 10,
         "checkAgainAfterGraceDelay": true
       }
     }
