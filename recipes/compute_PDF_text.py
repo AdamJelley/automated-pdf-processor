@@ -39,8 +39,11 @@ for folder_path in PDF_pages__folders_paths:
     sentencesList.append(allPagestxt_simple)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+data = {'document':PDF_pages, 'text':sentencesList}
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 #sentencesList = nltk.sent_tokenize(allPagestxt_simple)
-df = pd.DataFrame(sentencesList, columns=['text'])
+df = pd.DataFrame(data)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 pdf_text_df = df # Compute a Pandas dataframe to write into PDF_text
