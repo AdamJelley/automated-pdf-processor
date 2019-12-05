@@ -16,13 +16,6 @@ pdfs_Processed_path = pdfs_Processed.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
-PDF_pages = sorted(os.listdir(pdfs_Processed_path))
-PDF_pages_path = [os.path.join(pdfs_Processed_path, page) for page in PDF_pages]
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 PDF_pages_folders = os.listdir(pdfs_Processed_path)
 PDF_pages__folders_paths = [os.path.join(pdfs_Processed_path, folder) for folder in PDF_pages_folders]
 
@@ -39,7 +32,7 @@ for folder_path in PDF_pages__folders_paths:
     sentencesList.append(allPagestxt_simple)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-data = {'document':PDF_pages, 'text':sentencesList}
+data = {'document':PDF_pages_folders, 'text':sentencesList}
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 #sentencesList = nltk.sent_tokenize(allPagestxt_simple)
