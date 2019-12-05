@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575586537044
+    "lastModifiedOn": 1575586677064
   },
   "checklists": {
     "checklists": []
@@ -24,10 +24,17 @@
     {
       "id": "xuzzRLNS",
       "type": "ds_modified",
-      "delay": 900,
+      "name": "PDF Input",
+      "delay": 600,
       "active": true,
       "params": {
-        "watches": []
+        "watches": [
+          {
+            "type": "MANAGED_FOLDER",
+            "itemId": "QZb3pfTL",
+            "partitionsSpec": ""
+          }
+        ]
       },
       "graceDelaySettings": {
         "delay": 120,
@@ -35,7 +42,29 @@
       }
     }
   ],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "Internal relay",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "Dataiku_OCR_Demo",
+          "recipient": "adam.jelley@dataiku.com",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "Et8e1ph4",
+      "runConditionEnabled": true,
+      "runCondition": "outcome \u003d\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": []
   },
