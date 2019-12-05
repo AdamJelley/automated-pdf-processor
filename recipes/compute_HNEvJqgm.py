@@ -29,6 +29,7 @@ for output_pdf_folder in os.listdir(images_path):
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for pdf in os.listdir(input_path):
+    pdf = pdf.replace('.pdf','')
     pdf_path = os.path.join(input_path, pdf)
     output_path = os.path.join(images_path, pdf)
     os.mkdir(output_path)
