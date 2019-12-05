@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": false,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575587102615
+    "lastModifiedOn": 1575587425815
   },
   "checklists": {
     "checklists": []
@@ -37,7 +37,7 @@
         ]
       },
       "graceDelaySettings": {
-        "delay": 10,
+        "delay": 120,
         "checkAgainAfterGraceDelay": true
       }
     }
@@ -49,24 +49,57 @@
         "type": "mail-scenario",
         "configuration": {
           "channelId": "Internal relay",
-          "subject": "DSS scenario ${scenarioName}: ${outcome}",
-          "sender": "Dataiku_OCR_Demo",
+          "subject": "Dataiku OCR Demo - PDF Processed",
+          "sender": "DataikuDSS",
           "recipient": "adam.jelley@dataiku.com",
           "sendAsHTML": false,
-          "attachments": [],
+          "attachments": [
+            {
+              "type": "FOLDER",
+              "params": {
+                "attachedFolderId": "htEULTjD"
+              }
+            }
+          ],
           "messageSource": "TEMPLATE_FILE",
           "templateFormat": "FREEMARKER",
           "templateName": "default.ftl"
         }
       },
       "id": "Et8e1ph4",
+      "name": "Send Processed PDF",
       "runConditionEnabled": true,
       "runCondition": "outcome \u003d\u003d \u0027SUCCESS\u0027",
       "phase": "END"
     }
   ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_f_htEULTjD",
+        "type": "build_flowitem",
+        "name": "Document Output Summary",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "htEULTjD",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
