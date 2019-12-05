@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,134 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": ".",
+            "to": " "
+          },
+          {
+            "from": "alt",
+            "to": "religion"
+          },
+          {
+            "from": "comp",
+            "to": "computers -"
+          },
+          {
+            "from": "sys",
+            "to": "system"
+          },
+          {
+            "from": "forsale",
+            "to": "- for sale"
+          },
+          {
+            "from": "rec",
+            "to": "recreation -"
+          },
+          {
+            "from": "autos",
+            "to": "automobiles"
+          },
+          {
+            "from": "sci",
+            "to": "science -"
+          },
+          {
+            "from": "med",
+            "to": "medicine"
+          },
+          {
+            "from": "soc ",
+            "to": ""
+          },
+          {
+            "from": "christian",
+            "to": "christianity"
+          },
+          {
+            "from": "talk ",
+            "to": ""
+          },
+          {
+            "from": "misc",
+            "to": "miscellaneous"
+          },
+          {
+            "from": "graphics",
+            "to": "graphics/software"
+          },
+          {
+            "from": "politics",
+            "to": "politics -"
+          },
+          {
+            "from": "religion",
+            "to": "religion -"
+          },
+          {
+            "from": " x",
+            "to": ""
+          },
+          {
+            "from": "ms-windows",
+            "to": ""
+          },
+          {
+            "from": "ibm ",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "target_name"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "CAPITALIZE_FULLY",
+        "columns": [
+          "target_name"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
