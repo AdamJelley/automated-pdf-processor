@@ -3,13 +3,13 @@
   "id": "ProcessDocument",
   "type": "step_based",
   "name": "ProcessDocument",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575587425815
+    "lastModifiedOn": 1575589050569
   },
   "checklists": {
     "checklists": []
