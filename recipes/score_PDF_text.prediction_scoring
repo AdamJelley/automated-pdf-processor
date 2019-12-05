@@ -5,9 +5,12 @@
     "pipelineAllowStart": true
   },
   "backendType": "PY_MEMORY",
-  "filterInputColumns": false,
+  "filterInputColumns": true,
   "useGPU": false,
-  "keptInputColumns": [],
+  "keptInputColumns": [
+    "document",
+    "text"
+  ],
   "pythonBatchSize": 100000,
   "gpuAllowGrowth": false,
   "outputProbaPercentiles": false,
