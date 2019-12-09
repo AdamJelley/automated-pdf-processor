@@ -5,7 +5,7 @@
   "params": {
     "customConfig": {
       "method": "LSA",
-      "n_sentences": 2,
+      "n_sentences": 3,
       "text_column_name": "text"
     },
     "containerSelection": {
@@ -38,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575886408264
+    "lastModifiedOn": 1575886576992
   },
   "creationTag": {
     "versionNumber": 0,
