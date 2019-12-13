@@ -76,7 +76,7 @@
       {
         "sourceValue": "0",
         "mappedValue": 0,
-        "sampleFreq": 421
+        "sampleFreq": 420
       },
       {
         "sourceValue": "9",
@@ -89,14 +89,14 @@
         "sampleFreq": 533
       },
       {
-        "sourceValue": "5",
+        "sourceValue": "8",
         "mappedValue": 3,
         "sampleFreq": 532
       },
       {
-        "sourceValue": "8",
+        "sourceValue": "5",
         "mappedValue": 4,
-        "sampleFreq": 530
+        "sampleFreq": 531
       },
       {
         "sourceValue": "10",
@@ -111,37 +111,37 @@
       {
         "sourceValue": "15",
         "mappedValue": 7,
-        "sampleFreq": 525
-      },
-      {
-        "sourceValue": "7",
-        "mappedValue": 8,
-        "sampleFreq": 522
+        "sampleFreq": 524
       },
       {
         "sourceValue": "3",
-        "mappedValue": 9,
-        "sampleFreq": 521
+        "mappedValue": 8,
+        "sampleFreq": 523
       },
       {
-        "sourceValue": "2",
-        "mappedValue": 10,
-        "sampleFreq": 520
+        "sourceValue": "7",
+        "mappedValue": 9,
+        "sampleFreq": 522
       },
       {
         "sourceValue": "11",
+        "mappedValue": 10,
+        "sampleFreq": 518
+      },
+      {
+        "sourceValue": "14",
         "mappedValue": 11,
         "sampleFreq": 517
       },
       {
-        "sourceValue": "14",
+        "sourceValue": "2",
         "mappedValue": 12,
-        "sampleFreq": 516
+        "sampleFreq": 517
       },
       {
         "sourceValue": "4",
         "mappedValue": 13,
-        "sampleFreq": 515
+        "sampleFreq": 513
       },
       {
         "sourceValue": "6",
@@ -166,7 +166,7 @@
       {
         "sourceValue": "19",
         "mappedValue": 18,
-        "sampleFreq": 328
+        "sampleFreq": 330
       },
       {
         "sourceValue": "1",
@@ -178,7 +178,7 @@
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "text": {
-        "text_handling": "TOKENIZE_HASHING_SVD",
+        "text_handling": "TOKENIZE_TFIDF",
         "minRowsRatio": 0.001,
         "maxRowsRatio": 0.8,
         "maxWords": 0,
@@ -190,10 +190,10 @@
         "stopWordsMode": "NONE",
         "useCustomVectorizer": false,
         "name": "text",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "FreeText"
         },

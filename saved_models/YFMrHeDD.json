@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (LOGISTIC_REGRESSION) on twenty_newsgroups",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1576242178288",
+  "activeVersion": "initial",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -100,6 +100,7 @@
         "min_samples_leaf": [
           3
         ],
+        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -117,6 +118,7 @@
         "min_samples_leaf": [
           3
         ],
+        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -134,6 +136,7 @@
         "min_samples_leaf": [
           3
         ],
+        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -152,6 +155,7 @@
         "min_samples_leaf": [
           3
         ],
+        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -174,6 +178,7 @@
         "min_samples_leaf": [
           3
         ],
+        "selection_mode": "AUTO",
         "max_features": [
           0
         ],
@@ -251,11 +256,13 @@
           5
         ],
         "distance_weighting": false,
+        "algorithm": "AUTO",
         "p": 2,
         "leaf_size": 30
       },
       "logistic_regression": {
         "enabled": false,
+        "multi_class": "OVR",
         "l1": false,
         "l2": true,
         "C": [
@@ -693,11 +700,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 0,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576242266735
+    "lastModifiedOn": 1575465036975
   },
   "creationTag": {
     "versionNumber": 0,
