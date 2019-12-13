@@ -26,7 +26,8 @@
           "objectType": "SCENARIO"
         },
         "modes": [
-          "RUN"
+          "RUN",
+          "READ"
         ]
       }
     ]
@@ -211,11 +212,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241091221
+    "lastModifiedOn": 1576241147690
   },
   "creationTag": {
     "versionNumber": 0,
