@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "PDF_text_scored_names",
+          "ref": "PDF_topics",
           "deps": []
         },
         {
-          "ref": "PDF_topics",
+          "ref": "PDF_text_labelled",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575584397272
+    "lastModifiedOn": 1576242933876
   },
   "creationTag": {
     "versionNumber": 0,
