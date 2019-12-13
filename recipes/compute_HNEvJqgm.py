@@ -21,7 +21,7 @@ images_path = images.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # If project variable is set to true, all outputs cleared and PDF processing is re-run for all input PDFs.
-if bool(dataiku.get_custom_variables()["reprocess_PDFs"]) == True:
+if dataiku.get_custom_variables()["reprocess_PDFs"].lower() == "true":
     for output_pdf_folder in os.listdir(images_path):
         output_pdf_folder_path = os.path.join(images_path, output_pdf_folder)
         for page in os.listdir(output_pdf_folder_path):
