@@ -1,0 +1,30 @@
+{
+  "type": "managed-folder_content",
+  "params": {
+    "folderSmartId": "QZb3pfTL",
+    "isDirectory": false
+  },
+  "owner": "ajelley",
+  "listed": false,
+  "name": "Content of PDF_Input",
+  "dashboardCreationId": "moj9XTy",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1576240877390
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1576240877390
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
