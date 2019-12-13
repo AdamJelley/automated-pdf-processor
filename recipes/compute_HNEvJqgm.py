@@ -20,16 +20,21 @@ images_info = images.get_info()
 images_path = images.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-for output_pdf_folder in os.listdir(images_path):
-    output_pdf_folder_path = os.path.join(images_path, output_pdf_folder)
-    for page in os.listdir(output_pdf_folder_path):
-        page_path = os.path.join(output_pdf_folder_path, page)
-        os.remove(page_path)
-    os.rmdir(output_pdf_folder_path)
+# If project variable is set to true, all outputs cleared and PDF processing is re-run for all input PDFs.
+if bool(dataiku.get_custom_variables()["reprocess_PDFs"]) == True:
+    for output_pdf_folder in os.listdir(images_path):
+        output_pdf_folder_path = os.path.join(images_path, output_pdf_folder)
+        for page in os.listdir(output_pdf_folder_path):
+            page_path = os.path.join(output_pdf_folder_path, page)
+            os.remove(page_path)
+        os.rmdir(output_pdf_folder_path)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for pdf in os.listdir(input_path):
     pdf_path = os.path.join(input_path, pdf)
     output_path = os.path.join(images_path, pdf.replace('.pdf',''))
-    os.mkdir(output_path)
-    pdf_image = convert_from_path(pdf_path,fmt='jpg',output_folder=output_path)
+    if os.path.exists(output_path):
+        print('PDF already processed.')
+    else:
+        os.mkdir(output_path)
+        pdf_image = convert_from_path(pdf_path,fmt='jpg',output_folder=output_path)
