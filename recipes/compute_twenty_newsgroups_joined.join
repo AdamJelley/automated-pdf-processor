@@ -4,18 +4,22 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
         {
           "column1": {
-            "name": "text",
+            "name": "target",
             "table": 0
           },
           "column2": {
             "name": "target",
             "table": 1
           },
+          "maxDistance": 1,
           "type": "EQ"
         }
       ]
