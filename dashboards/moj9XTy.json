@@ -132,11 +132,11 @@
   "name": "Dataiku OCR Demo\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241100347
+    "lastModifiedOn": 1576241109543
   },
   "creationTag": {
     "versionNumber": 0,
