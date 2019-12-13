@@ -212,11 +212,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241343996
+    "lastModifiedOn": 1576241615814
   },
   "creationTag": {
     "versionNumber": 0,
@@ -225,6 +225,7 @@
     },
     "lastModifiedOn": 1572008102346
   },
+  "description": "This project takes input PDFs, extracts the text, classifies and summarises the documemt, writes the output to a file and emails it to the user.",
   "shortDesc": "The project *Dataiku OCR Demo* was created by Adam Jelley on Oct 25th 2019",
   "tags": [],
   "customFields": {
@@ -236,33 +237,12 @@
   "checklists": {
     "checklists": [
       {
-        "title": "Your new project\u0027s Todo",
+        "title": "Todo List",
         "createdOn": 0,
         "items": [
           {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1572008102347,
-            "createdBy": "ajelley",
-            "stateChangedOn": 0
-          },
-          {
             "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1572008102347,
-            "createdBy": "ajelley",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/DATAIKUOCRDEMO/datasets/new/)",
-            "createdOn": 1572008102347,
-            "createdBy": "ajelley",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
+            "text": "Improve text summarisation and classification models",
             "createdOn": 1572008102347,
             "createdBy": "ajelley",
             "stateChangedOn": 0
