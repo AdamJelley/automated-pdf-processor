@@ -10,6 +10,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "htEULTjD",
+          "objectType": "MANAGED_FOLDER"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -193,11 +202,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576240876534
+    "lastModifiedOn": 1576240898973
   },
   "creationTag": {
     "versionNumber": 0,
