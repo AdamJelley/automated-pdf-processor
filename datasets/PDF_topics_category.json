@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575584396705
+    "lastModifiedOn": 1576242933239
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,91 +67,7 @@
         "type": "string"
       },
       {
-        "name": "proba_0",
-        "type": "double"
-      },
-      {
-        "name": "proba_9",
-        "type": "double"
-      },
-      {
-        "name": "proba_13",
-        "type": "double"
-      },
-      {
-        "name": "proba_8",
-        "type": "double"
-      },
-      {
-        "name": "proba_5",
-        "type": "double"
-      },
-      {
-        "name": "proba_10",
-        "type": "double"
-      },
-      {
-        "name": "proba_12",
-        "type": "double"
-      },
-      {
-        "name": "proba_15",
-        "type": "double"
-      },
-      {
-        "name": "proba_3",
-        "type": "double"
-      },
-      {
-        "name": "proba_7",
-        "type": "double"
-      },
-      {
-        "name": "proba_11",
-        "type": "double"
-      },
-      {
-        "name": "proba_14",
-        "type": "double"
-      },
-      {
-        "name": "proba_2",
-        "type": "double"
-      },
-      {
-        "name": "proba_4",
-        "type": "double"
-      },
-      {
-        "name": "proba_6",
-        "type": "double"
-      },
-      {
-        "name": "proba_17",
-        "type": "double"
-      },
-      {
-        "name": "proba_16",
-        "type": "double"
-      },
-      {
-        "name": "proba_18",
-        "type": "double"
-      },
-      {
-        "name": "proba_19",
-        "type": "double"
-      },
-      {
-        "name": "proba_1",
-        "type": "double"
-      },
-      {
         "name": "prediction",
-        "type": "string"
-      },
-      {
-        "name": "target_name",
         "type": "string"
       },
       {
