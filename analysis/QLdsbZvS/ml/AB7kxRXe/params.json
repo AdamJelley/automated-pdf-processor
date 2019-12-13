@@ -1,0 +1,103 @@
+{
+  "targetVariable": "target_name",
+  "weight": {},
+  "time": {
+    "enabled": false,
+    "ascending": true
+  },
+  "calibration": {
+    "calibrationMethod": "NO_CALIBRATION"
+  },
+  "guessPolicy": "DEFAULT",
+  "id": "AB7kxRXe",
+  "initiator": "ajelley",
+  "taskType": "PREDICTION",
+  "name": "Predict target_name",
+  "backendType": "PY_MEMORY",
+  "maxConcurrentModelTraining": 2,
+  "envSelection": {
+    "envMode": "USE_BUILTIN_MODE"
+  },
+  "containerSelection": {
+    "containerMode": "INHERIT"
+  },
+  "sparkParams": {
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkUseGlobalMetastore": false,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "sparkRepartitionNonHDFS": 1,
+    "pipelineAllowStart": true,
+    "pipelineAllowMerge": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT"
+  },
+  "sparkCheckpoint": "NONE",
+  "predictionDisplayScript": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "predictionDisplayCharts": [],
+  "partitionedModel": {
+    "enabled": false,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": -1,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    }
+  }
+}
