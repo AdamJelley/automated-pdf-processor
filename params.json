@@ -153,7 +153,7 @@
       }
     }
   },
-  "name": "Dataiku OCR Demo",
+  "name": "PDF Processor",
   "projectStatus": "Sandbox",
   "imgPattern": 1,
   "showInitials": false,
@@ -212,11 +212,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241147690
+    "lastModifiedOn": 1576241343996
   },
   "creationTag": {
     "versionNumber": 0,
