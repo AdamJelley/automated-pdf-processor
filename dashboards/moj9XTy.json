@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 8,
+              "width": 7,
               "height": 5
             },
             "clickAction": "DO_NOTHING",
@@ -23,10 +23,31 @@
             "insightType": "managed-folder_content",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 7,
+              "width": 5,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "minimal": false,
+              "showLegend": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "UJDjO3k",
+            "insightType": "managed-folder_content",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
-      "showTitle": false
+      "title": "PDF Processor",
+      "showTitle": true
     }
   ],
   "owner": "ajelley",
@@ -34,11 +55,11 @@
   "name": "Dataiku OCR Demo\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576240877814
+    "lastModifiedOn": 1576240961799
   },
   "creationTag": {
     "versionNumber": 0,
