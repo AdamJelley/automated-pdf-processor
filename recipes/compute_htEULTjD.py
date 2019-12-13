@@ -26,9 +26,6 @@ for output_pdf_folder in os.listdir(pdf_topics_path):
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for idx, row in pdf_topics_df.iterrows():
-    document_folder_path = os.path.join(pdf_topics_path, row['document'])
-    os.mkdir(document_folder_path)
-
-    with open(os.path.join(document_folder_path,"PDF_summary.txt"), 'w') as text_file:
+    with open(os.path.join(pdf_topics_path, row['document']+"_summary.txt"), 'w') as text_file:
         outputText = 'Document: '+ row['document'] + '\n\nCategory: ' + row['prediction'] +'\n\nSummary: \n\n' + row['text_summary'] + '\n\n\n\n\nFull Document: \n\n' + row['text']
         text_file.write(outputText)
