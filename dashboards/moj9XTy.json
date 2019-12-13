@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 7,
+              "width": 6,
               "height": 5
             },
             "clickAction": "DO_NOTHING",
@@ -28,8 +28,8 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 7,
-              "width": 5,
+              "left": 6,
+              "width": 6,
               "height": 5
             },
             "clickAction": "DO_NOTHING",
@@ -55,11 +55,11 @@
   "name": "Dataiku OCR Demo\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576240966256
+    "lastModifiedOn": 1576240974702
   },
   "creationTag": {
     "versionNumber": 0,
