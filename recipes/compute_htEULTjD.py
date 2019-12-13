@@ -7,7 +7,7 @@ import os
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
-pdf_topics = dataiku.Dataset("PDF_topics_category_summary")
+pdf_topics = dataiku.Dataset("PDF_topics_category")
 pdf_topics_df = pdf_topics.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
