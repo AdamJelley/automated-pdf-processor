@@ -19,6 +19,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "ProcessDocument",
+          "objectType": "SCENARIO"
+        },
+        "modes": [
+          "RUN"
+        ]
       }
     ]
   },
@@ -202,11 +211,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241061222
+    "lastModifiedOn": 1576241091221
   },
   "creationTag": {
     "versionNumber": 0,
