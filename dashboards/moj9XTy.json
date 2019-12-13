@@ -48,6 +48,64 @@
       },
       "title": "PDF Processor",
       "showTitle": true
+    },
+    {
+      "id": "wQDRtBA",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "minimal": false,
+              "showLegend": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "SmOkOxM",
+            "insightType": "managed-folder_content",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "title": "Input PDFs",
+      "showTitle": true
+    },
+    {
+      "id": "ymSF5ax",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "minimal": false,
+              "showLegend": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "szt5yuU",
+            "insightType": "managed-folder_content",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "title": "Output Files",
+      "showTitle": true
     }
   ],
   "owner": "ajelley",
@@ -55,11 +113,11 @@
   "name": "Dataiku OCR Demo\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241020431
+    "lastModifiedOn": 1576241065902
   },
   "creationTag": {
     "versionNumber": 0,
