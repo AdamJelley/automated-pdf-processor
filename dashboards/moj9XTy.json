@@ -3,7 +3,28 @@
     {
       "id": "VFcyMmi",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 8,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "minimal": false,
+              "showLegend": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "yvKSQwh",
+            "insightType": "managed-folder_content",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +34,11 @@
   "name": "Dataiku OCR Demo\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1572008102352
+    "lastModifiedOn": 1576240877814
   },
   "creationTag": {
     "versionNumber": 0,
