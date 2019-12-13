@@ -16,7 +16,7 @@
     "main": {
       "items": [
         {
-          "ref": "twenty_newsgroups",
+          "ref": "twenty_newsgroups_joined",
           "deps": []
         }
       ]
@@ -33,11 +33,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575465036991
+    "lastModifiedOn": 1576242083052
   },
   "creationTag": {
     "versionNumber": 0,

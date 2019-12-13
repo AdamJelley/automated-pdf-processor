@@ -69,9 +69,9 @@
       "C": [
         0.01,
         0.1,
-        1.0,
-        10.0,
-        100.0
+        1,
+        10,
+        100
       ],
       "l1": false,
       "l2": true,
@@ -83,16 +83,16 @@
       "customEvaluationMetricGIB": true,
       "costMatrixWeights": {
         "fpGain": -0.3,
-        "tpGain": 1.0,
-        "fnGain": 0.0,
-        "tnGain": 0.0
+        "tpGain": 1,
+        "fnGain": 0,
+        "tnGain": 0
       },
       "liftPoint": 0.4,
       "evaluationMetric": "ROC_AUC",
       "customEvaluationMetricNeedsProba": false
     },
     "autoOptimizeThreshold": true,
-    "forcedClassifierThreshold": 0.0,
+    "forcedClassifierThreshold": 0,
     "grid_search_params": {
       "mode": "KFOLD",
       "nJobs": 4,
@@ -112,7 +112,7 @@
   "generatingModelId": "A-DATAIKUOCRDEMO-A7UmQ3vN-ZTAaKm7b-s2-pp2-m1",
   "preprocessing": {
     "reduce": {
-      "kept_variance": 0.0,
+      "kept_variance": 0,
       "enabled": false
     },
     "target_remapping": [
@@ -250,14 +250,14 @@
         "generate_derivative": false,
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
         "type": "NUMERIC",
-        "impute_constant_value": 0.0,
+        "impute_constant_value": 0,
         "binarize_threshold_mode": "MEDIAN"
       }
     },
@@ -284,7 +284,7 @@
         "behavior": "DISABLED"
       }
     },
-    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleRatio": 1,
     "preprocessingFitSampleSeed": 1337,
     "feature_selection_params": {
       "pca_params": {
@@ -296,16 +296,16 @@
       },
       "method": "NONE",
       "correlation_params": {
-        "min_abs_correlation": 0.0,
+        "min_abs_correlation": 0,
         "n_features": 25
       },
       "lasso_params": {
         "alpha": [
           0.01,
           0.1,
-          1.0,
-          10.0,
-          100.0
+          1,
+          10,
+          100
         ],
         "cross_validate": true
       },
