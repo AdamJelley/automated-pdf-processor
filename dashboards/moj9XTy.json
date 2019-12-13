@@ -149,14 +149,14 @@
   ],
   "owner": "ajelley",
   "listed": true,
-  "name": "Dataiku OCR Demo\u0027s default dashboard",
+  "name": "PDF Processor Interface",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241330659
+    "lastModifiedOn": 1576241364564
   },
   "creationTag": {
     "versionNumber": 0,
