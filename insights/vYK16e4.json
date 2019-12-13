@@ -1,0 +1,29 @@
+{
+  "type": "scenario_last_runs",
+  "params": {
+    "scenarioSmartId": "ProcessDocument"
+  },
+  "owner": "ajelley",
+  "listed": false,
+  "name": "Timeline view of scenario ProcessDocument",
+  "dashboardCreationId": "moj9XTy",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1576241148424
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ajelley"
+    },
+    "lastModifiedOn": 1576241148424
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
