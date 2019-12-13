@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576239711679
+    "lastModifiedOn": 1576240072776
   },
   "checklists": {
     "checklists": []
@@ -25,7 +25,7 @@
       "id": "xuzzRLNS",
       "type": "ds_modified",
       "name": "PDF Input",
-      "delay": 600,
+      "delay": 60,
       "active": true,
       "params": {
         "watches": [
