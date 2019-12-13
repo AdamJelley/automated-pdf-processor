@@ -43,6 +43,25 @@
             "insightType": "managed-folder_content",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 5,
+              "left": 0,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showLastRun": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "RgFYeW8",
+            "insightType": "scenario_run_button",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -113,11 +132,11 @@
   "name": "Dataiku OCR Demo\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241075262
+    "lastModifiedOn": 1576241100347
   },
   "creationTag": {
     "versionNumber": 0,
