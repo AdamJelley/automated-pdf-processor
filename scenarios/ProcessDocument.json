@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576242959915
+    "lastModifiedOn": 1576243268272
   },
   "checklists": {
     "checklists": []
@@ -89,7 +89,7 @@
         "params": {
           "projectKey": "DATAIKUOCRDEMO",
           "variables": {
-            "reprocess_PDFs": "False"
+            "reprocess_PDFs": "True"
           },
           "definitions": [
             {
