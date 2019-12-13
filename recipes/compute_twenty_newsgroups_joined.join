@@ -6,20 +6,35 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "text",
+            "table": 0
+          },
+          "column2": {
+            "name": "target",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "text",
+      "type": "string",
       "table": 0
     },
     {
       "name": "target",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "target_name",
+      "type": "string",
       "table": 1
     }
   ],
@@ -77,5 +92,27 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "target",
+            "type": "bigint"
+          },
+          {
+            "name": "target_name",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
