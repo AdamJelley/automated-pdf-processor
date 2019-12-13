@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1575833788351
+    "lastModifiedOn": 1576239711679
   },
   "checklists": {
     "checklists": []
@@ -75,6 +75,31 @@
   ],
   "params": {
     "steps": [
+      {
+        "id": "set_project_vars_reprocess_PDFs",
+        "type": "set_project_vars",
+        "name": "Reprocess PDFs",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "projectKey": "DATAIKUOCRDEMO",
+          "variables": {
+            "reprocess_PDFs": "False"
+          },
+          "definitions": [
+            {
+              "key": "\"reprocess_PDFs\": \"False\"",
+              "value": ""
+            }
+          ],
+          "evaluateValues": false
+        }
+      },
       {
         "id": "build_0_true_f_htEULTjD",
         "type": "build_flowitem",
