@@ -102,13 +102,12 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "minimal": false,
-              "showLegend": true
+              "loadTimeoutInSeconds": 0
             },
             "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "SmOkOxM",
-            "insightType": "managed-folder_content",
+            "showTitle": "NO",
+            "insightId": "f68PPN1",
+            "insightType": "web_app",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -152,11 +151,11 @@
   "name": "PDF Processor Interface",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576520836183
+    "lastModifiedOn": 1576520855460
   },
   "creationTag": {
     "versionNumber": 0,
