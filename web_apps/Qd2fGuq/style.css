@@ -2,7 +2,7 @@
 {
     width:840px;
     height:317px;
-    overflow:scroll;     /* if you don't want a scrollbar, set to hidden */
+    overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
     overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
 
     /* resize and min-height are optional, allows user to resize viewable area */
