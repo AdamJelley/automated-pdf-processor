@@ -29,6 +29,15 @@
           "RUN",
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Qd2fGuq",
+          "objectType": "WEB_APP"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -212,11 +221,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576241615814
+    "lastModifiedOn": 1576520846572
   },
   "creationTag": {
     "versionNumber": 0,
