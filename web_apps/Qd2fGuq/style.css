@@ -2,8 +2,8 @@
     position:relative;
 }
 #iframe-overlay { /* Adjust values as needed */
-    height:200px;
-    width:5000px;
+    height:20%;
+    width:100%;
     background-color:#fff;
     position:relative;
     top:-24px;
