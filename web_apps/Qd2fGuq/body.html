@@ -1,0 +1,131 @@
+<link rel="stylesheet" href="/static/public/styles/1.0.0/dku-styles.css" />
+
+<h1>Welcome to your webapp</h1>
+
+<h2>This webapp template will inspire you</h2>
+<section>
+    <ul>
+        <li>Basic styles for forms, tables, titles, etc</li>
+        <li>Layout elements</li>
+        <li>Sample JavaScript to manage user interactions</li>
+    </ul>
+    For more guidance:
+    <p>
+        <a href="https://doc.dataiku.com/dss/latest/webapps/index.html" target="_blank"><button>Webapps documentation</button></a>
+        <a href="https://www.dataiku.com/learn/guide/#refinements=%5B%7B%22tags%22%3A%22Webapp%22%7D%5D" target="_blank"><button class="blue-button">Webapps tutorials</button></a>
+    </p>
+</section>
+
+<h3>Fetch a dataset</h3>
+<section>
+    <p>
+        This webapp probably needs to get a dataset from Dataiku DSS. You can do that using
+        the <a href="https://doc.dataiku.com/dss/latest/api/js/index.html">Javascript API</a>.
+        <br />If you want to use more advanced features, you can even use the
+        <a href="https://doc.dataiku.com/dss/latest/publicapi/rest.html">REST API</a> directly.
+    </p>
+    <p>
+        To interact with Dataiku, the webapp must identify itself. To do that, we created an
+        <a href="https://doc.dataiku.com/dss/latest/publicapi/keys.html">API key</a>.
+        <br /> For security reasons, this API key is not allowed to do much by default.
+        Before you can fetch a dataset, you must explicitly allow it in the settings tab of the webapp editor.
+    </p>
+
+    <div class="fetch-dataset-container">
+        <section class="fetch-dataset-form">
+            <form id="form-dataset" novalidate>
+                <div class="field">
+                    <label for="dataset-to-fetch">Dataset Name</label>
+                    <input type="text" name="dataset-to-fetch" placeholder="My dataset" id="dataset-to-fetch">
+                </div>
+                <button type="button" class="main-blue-button" id="fetch-button">Fetch</button>
+            </form>
+        </section>
+
+        <section class="fetch-dataset-results">
+            <span id="message">Results will appear here.</span>
+        </section>
+    </div>
+</section>
+
+<h3>Form example</h3>
+<section>
+    A custom form that your team could use to export some data extract could look like that:
+    <form id="form-sample" novalidate>
+        <div class="field">
+            <label for="analysis-name">Analysis title</label>
+            <input type="text" name="analysis-name" placeholder="Churn Analysis" id="analysis-name" />
+        </div>
+        <div class="field">
+            <label for="dataset-name">Dataset Name</label>
+            <div class="select">
+                <select id="dataset-name" name="analysis-name">
+                    <option value="" disabled selected hidden>Pick a dataset...</option>
+                    <option value="">Dataset</option>
+                    <option value="Churn_may">Churn_may</option>
+                    <option value="Churn_june">Churn_june</option>
+                    <option value="Churn_july">Churn_july</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <label for="dataset-column">Dataset Column</label>
+            <div class="select">
+                <select id="dataset-column" name="dataset-column">
+                    <option value="" disabled selected hidden>Pick a column...</option>
+                    <option value="">Column</option>
+                    <option value="ID">ID</option>
+                    <option value="Day Charge">Day Charge</option>
+                    <option value="Day Calls">Day Calls</option>
+                    <option value="Churn">Churn</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <div class="checkbox">
+                <input type="checkbox" name="rows-limit" id="rows-limit" />
+                <label for="rows-limit">Display only 100 rows</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="radio">
+                <input type="radio" name="export" value="json" id="json" checked="checked" />
+                <label for="json">Export as JSON</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="export" value="csv" id="csv" />
+                <label for="csv">Export as CSV</label>
+            </div>
+        </div>
+        <button type="button" class="text-button">Reset</button>
+        <button type="button" class="main-blue-button" id="export-button">Ok</button>
+    </form>
+</section>
+
+<h3>Table example</h3>
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th><th>Author</th><th>Write duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lord of the Rings</td><td>J. R. R. Tolkien</td><td>16 years</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Philosopher's stone</td><td>J. K. Rowling</td><td>6 years</td>
+            </tr>
+            <tr>
+                <td>To Kill a Mockingbird</td><td>Harper Lee</td><td>2.5 years</td>
+            </tr>
+            <tr>
+                <td>The Little Prince</td><td>Antoine de Saint-Exupery</td><td>6 months</td>
+            </tr>
+            <tr>
+                <td>On the road</td><td>Jack Kerouac</td><td>3 weeks</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

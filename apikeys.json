@@ -1,0 +1,24 @@
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "Qd2fGuq",
+    "id": "RGJtdjEW2CNh4emN",
+    "key": "5EMjD0BJf2jAtDCmyg4mZ3wC3TfMjVHj",
+    "label": "Key for Web app InputFolder_iFrame(Qd2fGuq)",
+    "createdOn": 1576519185804
+  }
+]
