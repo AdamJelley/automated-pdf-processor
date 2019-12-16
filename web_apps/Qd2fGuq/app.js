@@ -1,4 +1,3 @@
 var iframe = document.getElementById("iframe");
-var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+var elmnt = iframe.contentWindow.document.getElementsBySelector("div.row-fluid.master-nav.noflex.ng-scope")[0];
 elmnt.style.display = "none";
-//*[@id="root-dom-element"]/div[2]
