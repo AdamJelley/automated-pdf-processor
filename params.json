@@ -65,7 +65,22 @@
     }
   },
   "owner": "ajelley",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "gallery_admin",
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -221,11 +236,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576603455502
+    "lastModifiedOn": 1576603513257
   },
   "creationTag": {
     "versionNumber": 0,
