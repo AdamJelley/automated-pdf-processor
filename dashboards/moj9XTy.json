@@ -8,26 +8,6 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 0,
-              "width": 5,
-              "height": 5
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "minimal": false,
-              "showLegend": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "yvKSQwh",
-            "insightType": "managed-folder_content",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
               "left": 6,
               "width": 6,
               "height": 5
@@ -80,6 +60,25 @@
             "showTitle": "MOUSEOVER",
             "insightId": "vYK16e4",
             "insightType": "scenario_last_runs",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 5,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "loadTimeoutInSeconds": 0
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "insightId": "BFs6WYC",
+            "insightType": "web_app",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -151,11 +150,11 @@
   "name": "PDF Processor Interface",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1576599829757
+    "lastModifiedOn": 1576599852466
   },
   "creationTag": {
     "versionNumber": 0,
