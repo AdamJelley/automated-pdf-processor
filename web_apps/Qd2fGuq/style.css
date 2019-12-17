@@ -5,7 +5,7 @@ iframe {
       bottom:0px; 
       right:auto; 
       width:100%;
-      height:calc(100% - 50px); /*using calc*/
+      height:50%
       border:none; 
       margin:0; 
       padding:0;
