@@ -17,12 +17,9 @@ pdf_topics_text_info = pdf_topics_text.get_info()
 pdf_topics_path = pdf_topics_text.get_path()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-for output_pdf_folder in os.listdir(pdf_topics_path):
-    output_pdf_folder_path = os.path.join(pdf_topics_path, output_pdf_folder)
-    for page in os.listdir(output_pdf_folder_path):
-        page_path = os.path.join(output_pdf_folder_path, page)
-        os.remove(page_path)
-    os.rmdir(output_pdf_folder_path)
+for page in os.listdir(pdf_topics_path):
+    page_path = os.path.join(pdf_topics_path, page)
+    os.remove(page_path)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for idx, row in pdf_topics_df.iterrows():
