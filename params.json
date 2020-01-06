@@ -178,7 +178,7 @@
     }
   },
   "name": "PDF Processor",
-  "projectStatus": "Sandbox",
+  "projectStatus": "In use",
   "imgPattern": 1,
   "showInitials": false,
   "metrics": {
@@ -236,11 +236,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "raffane"
     },
-    "lastModifiedOn": 1576603513257
+    "lastModifiedOn": 1578320437242
   },
   "creationTag": {
     "versionNumber": 0,
@@ -253,10 +253,10 @@
   "shortDesc": "The project *Dataiku OCR Demo* was created by Adam Jelley on Oct 25th 2019",
   "tags": [],
   "customFields": {
-    "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
+    "gdpr_forbid_uploaded_datasets": false,
     "gdpr_forbid_model_creation": false,
-    "gdpr_forbid_uploaded_datasets": false
+    "gdpr_forbid_dataset_sharing": false
   },
   "checklists": {
     "checklists": [
