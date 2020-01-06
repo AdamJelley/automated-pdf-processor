@@ -60,7 +60,11 @@
       "useManualPluginsInfo": false,
       "includedDatasetsData": [],
       "includedSavedModels": [],
-      "includedManagedFolders": [],
+      "includedManagedFolders": [
+        {
+          "id": "QZb3pfTL"
+        }
+      ],
       "shareAllInputDatasets": false
     }
   },
@@ -236,11 +240,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "raffane"
     },
-    "lastModifiedOn": 1578320440492
+    "lastModifiedOn": 1578324411626
   },
   "creationTag": {
     "versionNumber": 0,
