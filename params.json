@@ -236,11 +236,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "raffane"
     },
-    "lastModifiedOn": 1578320437242
+    "lastModifiedOn": 1578320440492
   },
   "creationTag": {
     "versionNumber": 0,
@@ -251,7 +251,9 @@
   },
   "description": "This project takes input PDFs, extracts the text, classifies and summarises the document, writes the output to a file and emails it to the user. The dashboard serves as an interface to use the project. See the project wiki for more information.",
   "shortDesc": "The project *Dataiku OCR Demo* was created by Adam Jelley on Oct 25th 2019",
-  "tags": [],
+  "tags": [
+    "gallery"
+  ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,
     "gdpr_forbid_uploaded_datasets": false,
