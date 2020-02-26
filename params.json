@@ -88,7 +88,21 @@
       "group": "rnd",
       "admin": false,
       "readProjectContent": false,
-      "writeProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    {
+      "group": "quant_finance",
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
       "exportDatasetsData": true,
       "readDashboards": false,
       "writeDashboards": false,
@@ -254,11 +268,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
-      "login": "jbjansen"
+      "login": "ajelley"
     },
-    "lastModifiedOn": 1581602092577
+    "lastModifiedOn": 1582725831179
   },
   "creationTag": {
     "versionNumber": 0,
