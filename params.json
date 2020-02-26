@@ -101,13 +101,13 @@
     {
       "group": "quant_finance",
       "admin": false,
-      "readProjectContent": false,
+      "readProjectContent": true,
       "writeProjectContent": false,
       "exportDatasetsData": true,
       "readDashboards": false,
       "writeDashboards": false,
       "moderateDashboards": false,
-      "runScenarios": false,
+      "runScenarios": true,
       "manageDashboardAuthorizations": false,
       "manageExposedElements": false,
       "manageAdditionalDashboardUsers": false
@@ -272,7 +272,7 @@
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1582725831179
+    "lastModifiedOn": 1582725855155
   },
   "creationTag": {
     "versionNumber": 0,
