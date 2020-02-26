@@ -105,7 +105,7 @@
       "writeProjectContent": false,
       "exportDatasetsData": true,
       "readDashboards": false,
-      "writeDashboards": false,
+      "writeDashboards": true,
       "moderateDashboards": false,
       "runScenarios": true,
       "manageDashboardAuthorizations": false,
@@ -268,11 +268,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 30,
     "lastModifiedBy": {
       "login": "ajelley"
     },
-    "lastModifiedOn": 1582725855155
+    "lastModifiedOn": 1582727801151
   },
   "creationTag": {
     "versionNumber": 0,
