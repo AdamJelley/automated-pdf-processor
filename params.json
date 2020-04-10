@@ -59,7 +59,11 @@
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
       "includedDatasetsData": [],
-      "includedSavedModels": [],
+      "includedSavedModels": [
+        {
+          "id": "y1EXaY1m"
+        }
+      ],
       "includedManagedFolders": [
         {
           "id": "QZb3pfTL"
@@ -187,11 +191,18 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0
+        }
       }
     }
   },
@@ -254,11 +265,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "raffane"
     },
-    "lastModifiedOn": 1582812526048
+    "lastModifiedOn": 1586518761137
   },
   "creationTag": {
     "versionNumber": 0,
