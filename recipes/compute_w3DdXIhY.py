@@ -42,7 +42,7 @@ for pdf_folder in os.listdir(images_folder_path):
         for i, page_path in enumerate(sorted(PDF_pages_path)):
             print(page_path)
             output_path = os.path.join(pdfs_processed_path, 'page_'+"{0:0=2d}".format(i+1)+'.txt')
-            pdf_text = pytesseract.image_to_string(Image.open(page_path))
+            pdf_text = pytesseract.image_to_string(Image.open(page_path), lang='eng')
             with open(output_path, "w") as f:
                 f.write(pdf_text)
                 f.close()
