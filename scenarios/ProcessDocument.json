@@ -3,13 +3,13 @@
   "id": "ProcessDocument",
   "type": "step_based",
   "name": "ProcessDocument",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "admin"
     },
-    "lastModifiedOn": 1576243510701
+    "lastModifiedOn": 1587633526562
   },
   "checklists": {
     "checklists": []
@@ -86,6 +86,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "projectKey": "DATAIKUOCRDEMO",
           "variables": {
@@ -111,6 +113,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {

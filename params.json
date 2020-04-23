@@ -72,37 +72,8 @@
       "shareAllInputDatasets": false
     }
   },
-  "owner": "ajelley",
-  "permissions": [
-    {
-      "group": "gallery_admin",
-      "admin": true,
-      "readProjectContent": false,
-      "writeProjectContent": true,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    },
-    {
-      "group": "rnd",
-      "admin": false,
-      "readProjectContent": false,
-      "writeProjectContent": false,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    }
-  ],
+  "owner": "admin",
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -207,7 +178,6 @@
     }
   },
   "name": "PDF Processor",
-  "projectStatus": "In use",
   "imgPattern": 1,
   "showInitials": false,
   "metrics": {
@@ -265,11 +235,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
-      "login": "raffane"
+      "login": "admin"
     },
-    "lastModifiedOn": 1586518761137
+    "lastModifiedOn": 1587633526556
   },
   "creationTag": {
     "versionNumber": 0,
@@ -281,7 +251,8 @@
   "description": "This project takes input PDFs, extracts the text, classifies and summarises the document, writes the output to a file and emails it to the user. The dashboard serves as an interface to use the project. See the project wiki for more information.",
   "shortDesc": "The project *Dataiku OCR Demo* was created by Adam Jelley on Oct 25th 2019",
   "tags": [
-    "gallery"
+    "gallery",
+    "imported"
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,

@@ -3,10 +3,13 @@
   "hasLegacyBackendURL": false,
   "params": {
     "backendEnabled": false,
+    "enableJavascriptModules": false,
     "autoStartBackend": false,
+    "hideJSSecurityPanel": false,
     "envSelection": {
       "envMode": "INHERIT"
     },
+    "nbProcesses": 1,
     "libraries": [
       "jquery",
       "dataiku"
@@ -15,16 +18,23 @@
       "containerSelection": {
         "containerMode": "INHERIT"
       },
+      "overrideGlobalK8sExposition": false,
       "exposition": {
         "type": "local_process",
         "params": {}
       },
-      "nbReplicas": 1
+      "scaling": {
+        "initialReplicas": 1,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0
+      }
     }
   },
   "config": {},
   "name": "InputFolder_iFrame",
-  "apiKey": "5EMjD0BJf2jAtDCmyg4mZ3wC3TfMjVHj",
+  "apiKey": "p1RSY6VYZ1UnR0m1YS3GR8c34kFqDMv9",
   "versionTag": {
     "versionNumber": 88,
     "lastModifiedBy": {

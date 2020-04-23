@@ -1,7 +1,10 @@
 {
   "tags": {
-    "recipe-editor": {},
     "deleted-recipe-editor": {},
+    "recipe-editor": {},
+    "imported": {
+      "color": "#263238"
+    },
     "gallery": {}
   }
 }

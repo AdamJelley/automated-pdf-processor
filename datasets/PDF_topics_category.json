@@ -44,7 +44,7 @@
   "tags": [],
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgresql-10",
+    "connection": "PostgreSQL_local",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
