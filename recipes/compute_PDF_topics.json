@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "method": "LSA",
+      "method": "textrank",
       "n_sentences": 3,
       "text_column_name": "text"
     },
@@ -38,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587639341160
+    "lastModifiedOn": 1587652936399
   },
   "creationTag": {
     "versionNumber": 0,
