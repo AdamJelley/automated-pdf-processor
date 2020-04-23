@@ -5,11 +5,11 @@
   "name": "build_flow",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "ajelley"
+      "login": "admin"
     },
-    "lastModifiedOn": 1576600433393
+    "lastModifiedOn": 1587633569854
   },
   "checklists": {
     "checklists": []
@@ -35,6 +35,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
