@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 from sklearn.datasets import fetch_20newsgroups
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-twenty_train = fetch_20newsgroups(data_home='‘~/scikit_learn_data’', subset='train', shuffle=True, random_state=42)
+twenty_train = fetch_20newsgroups(data_home='~/scikit_learn_data', subset='train', shuffle=True, random_state=42)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 articles_df = pd.DataFrame(twenty_train.data, columns=['text'])
