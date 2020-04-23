@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 40,
+    "versionNumber": 41,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587665021939
+    "lastModifiedOn": 1587665026735
   },
   "checklists": {
     "checklists": []
@@ -91,7 +91,7 @@
         "params": {
           "projectKey": "DATAIKUOCRDEMO",
           "variables": {
-            "reprocess_PDFs": "True"
+            "reprocess_PDFs": "False"
           },
           "definitions": [
             {
