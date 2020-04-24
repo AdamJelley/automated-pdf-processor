@@ -37,4 +37,4 @@ for pdf in os.listdir(input_path):
         print('PDF already processed.')
     else:
         os.mkdir(output_path)
-        pdf_image = convert_from_path(pdf_path,fmt='jpg',dpi='300',output_folder=output_path)
+        pdf_image = convert_from_path(pdf_path,fmt='jpg',dpi='400',output_folder=output_path)
