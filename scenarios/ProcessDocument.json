@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 57,
+    "versionNumber": 58,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587750528612
+    "lastModifiedOn": 1587750862927
   },
   "checklists": {
     "checklists": []
@@ -91,7 +91,7 @@
         "params": {
           "projectKey": "DATAIKUOCRDEMO",
           "variables": {
-            "reprocess_PDFs": "True"
+            "reprocess_PDFs": "False"
           },
           "definitions": [
             {
@@ -123,7 +123,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_FORCED_BUILD",
+          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
