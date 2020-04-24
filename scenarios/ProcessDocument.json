@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 56,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587750324933
+    "lastModifiedOn": 1587750528612
   },
   "checklists": {
     "checklists": []
@@ -123,7 +123,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
