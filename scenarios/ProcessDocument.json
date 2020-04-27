@@ -5,11 +5,11 @@
   "name": "ProcessDocument",
   "active": true,
   "versionTag": {
-    "versionNumber": 62,
+    "versionNumber": 63,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588015195462
+    "lastModifiedOn": 1588015650358
   },
   "checklists": {
     "checklists": []
@@ -26,7 +26,7 @@
       "type": "ds_modified",
       "name": "PDF Input",
       "delay": 120,
-      "active": true,
+      "active": false,
       "params": {
         "watches": [
           {
@@ -91,7 +91,7 @@
         "params": {
           "projectKey": "DATAIKUOCRDEMO",
           "variables": {
-            "reprocess_PDFs": "True"
+            "reprocess_PDFs": "False"
           },
           "definitions": [
             {
@@ -123,7 +123,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_FORCED_BUILD",
+          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
