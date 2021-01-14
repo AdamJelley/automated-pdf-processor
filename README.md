@@ -6,10 +6,6 @@ This project takes PDF files as input, uses Optical Character Recognition (OCR) 
 
 # Interface Usage (Dashboard)
 
-<p class="text-center">
-<a href="/projects/DATAIKUOCRDEMO/dashboards/moj9XTy_pdf-processor-interface/view/VFcyMmi"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon" />Go to Interface</a>
-</p>
-
 The [dashboard](dashboard:moj9XTy) shows a view of the input PDFs and output files. Documents can be uploaded by dragging and dropping onto the left hand side of the dashboard. The [scenario](scenario:ProcessDocument) to process the input PDFs can be triggered from here, and the text file contatining the classification, summary and full text will appear in the folder on the right hand side. Please see below for further information.
 
 # Data
@@ -33,10 +29,6 @@ The text summarisation was performed using Dataiku's Text Summarisation [plugin]
 
 # Flow
 
-<p class="text-center">
-<a href="/projects/DATAIKUOCRDEMO/flow/"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon" />Go to Flow</a>
-</p>
-
 The top part of the flow converts the [PDFs to images](recipe:compute_HNEvJqgm), [extracts the text](recipe:compute_htEULTjD) using OCR and [summarises](recipe:compute_PDF_topics) the document.
 
 The bottom part of the flow gets the [documents](dataset:twenty_newsgroups) and [labels](dataset:target_names_prepared), [joins](recipe:compute_twenty_newsgroups_joined) them together to create the [training data](dataset:twenty_newsgroups_joined), trains the [model](saved_model:y1EXaY1m) on this training data and uses the model to [classify](dataset:PDF_text_labelled) the document.
@@ -44,10 +36,6 @@ The bottom part of the flow gets the [documents](dataset:twenty_newsgroups) and 
 The document summary is then [joined](recipe:compute_PDF_topics_category) to the document classification, which are cleaned up and written to [output files](managed_folder:htEULTjD) for each document.
 
 # Running the Flow / Automation
-
-<p class="text-center">
-<a href="/projects/DATAIKUOCRDEMO/scenarios/"  class="btn btn-datasets-color btn-cta-big-mod"><i class="icon-dku-sample_project" class="btn-cta-big-mod-icon" />Scenarios</a>
-</p>
 
 The flow can be run using the scenario [ProcessDocument](scenario:ProcessDocument). This scenario will extract the text from all input PDFs, classify and summarise the document, create the output file and email this to the user. By default, text extraction will not be re-performed if the PDF has been processed previously (so previously processed PDFs will not be cleared even if they are removed from the input), but this behaviour can be modified by changing the project variable 'reprocess_PDFs' to 'True' in the first step of the scenario.
 
